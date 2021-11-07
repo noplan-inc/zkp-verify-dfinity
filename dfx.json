@@ -4,6 +4,12 @@
       "main": "src/hello/main.mo",
       "type": "motoko"
     },
+    "rust_hello": {
+      "build": "rustup run nightly cargo build --target wasm32-unknown-unknown --package rust_hello --release",
+      "candid": "src/rust_hello/src/rust_hello.did",
+      "wasm": "target/wasm32-unknown-unknown/release/rust_hello.wasm",
+      "type": "custom"
+    },
     "hello_assets": {
       "dependencies": [
         "hello"

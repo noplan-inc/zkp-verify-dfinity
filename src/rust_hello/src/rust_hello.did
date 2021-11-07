@@ -1,0 +1,3 @@
+service : {
+    "verify": (vk_bytes: text, proof_bytes: text, image_bytes: text) -> (bool) query;
+}
